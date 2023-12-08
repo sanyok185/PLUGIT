@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231204084813">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231208123740">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,13 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo logo"><img src="img/logo.svg" alt="Logo"></a>
+				<a href="main.html" class="header__logo logo"><img src="img/logo.svg" alt="Logo"></a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
+						<ul class="menu__list menu__list--pc">
+							<li class="menu__item"><a href="possibilities.html" class="menu__link">Можливості Odoo</a></li>
+							<li class="menu__item"><a href="blog.html" class="menu__link">Блог</a></li>
+						</ul>
 						<ul class="menu__list menu__list--mobile">
 							<li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Про Odoo</a></li>
@@ -29,9 +33,9 @@
 							<li class="menu__item"><a href="#" class="menu__link">Що ми пропонуємо</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Як проходить співпраця</a></li>
 						</ul>
-						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Можливості Odoo</a></li>
+						<ul class="menu__list menu__list--mobile">
 							<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
+							<li class="menu__item"><a href="possibilities.html" class="menu__link">Можливості Odoo</a></li>
 						</ul>
 					</nav>
 					<div class="header__actions">
@@ -45,13 +49,13 @@
 			<section class="page__hero hero">
 				<div class="hero__container">
 					<div class="hero__content">
-						<h1 class="hero__title title">
+						<h1 data-watch data-watch-once class="hero__title title">
 							Шукаєте надійну CRM та ERP систему для свого бізнесу?
 						</h1>
-						<div class="hero__text"><b>Обирайте Odoo</b>, як і 8 млн задоволених користувачів у всьому світі.</div>
-						<button type="button" class="hero__button button button--black">Дізнатись більше</button>
+						<div data-watch data-watch-once class="hero__text"><b>Обирайте Odoo</b>, як і 8 млн задоволених користувачів у всьому світі.</div>
+						<button data-watch data-watch-once type="button" class="hero__button button button--black">Дізнатись більше</button>
 					</div>
-					<div class="hero__images">
+					<div data-watch data-watch-once class="hero__images">
 						<picture><source srcset="img/main/hero/map.webp" type="image/webp"><img src="img/main/hero/map.png" alt="Map" class="hero__map hero__map--1"></picture>
 						<picture><source srcset="img/main/hero/locations.webp" type="image/webp"><img src="img/main/hero/locations.png" alt="" class="hero__map hero__map--2"></picture>
 						<picture><source srcset="img/main/hero/macbook.webp" type="image/webp"><img src="img/main/hero/macbook.png" alt="MacBook" class="hero__image"></picture>
@@ -65,7 +69,7 @@
 			<section class="page__about about">
 				<div class="about__container">
 					<div class="about__content">
-						<h2 class="about__title title">
+						<h2 data-watch data-watch-once class="about__title title">
 							ПРО ODOO
 						</h2>
 						<div class="about__text">
@@ -89,7 +93,7 @@
 						<div class="why__wrapper swiper-wrapper">
 							<div class="why__slide swiper-slide swiper-slide--1">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -114,7 +118,7 @@
 							</div>
 							<div class="why__slide swiper-slide swiper-slide--2">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -132,7 +136,7 @@
 											Odoo спроєктований з врахуванням потреб малих і середніх підприємств, це допомагає значно скоротити загальні витрати на використання програмних рішень.
 										</p>
 									</div>
-									<button type="button" class="why__button button">Спробувати безкоштовно</button>
+									<button data-popup="#popup" type="button" class="why__button button">Спробувати безкоштовно</button>
 									<div class="why__circle">
 										<img src="img/main/why/Slide 2/circle.png" alt="Circles">
 									</div>
@@ -140,7 +144,7 @@
 							</div>
 							<div class="why__slide swiper-slide swiper-slide--3">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -158,7 +162,7 @@
 											Odoo це доступно, зручно і просто: отримайте безкоштовну версію програмного забезпечення з необмеженою кількістю користувачів. Це означає, що ви можете масштабувати свій бізнес без додаткових витрат.
 										</p>
 									</div>
-									<button type="button" class="why__button button">Спробувати безкоштовно</button>
+									<button data-popup="#popup" type="button" class="why__button button">Спробувати безкоштовно</button>
 									<div class="why__circle">
 										<img src="img/main/why/Slide 3/circle.png" alt="Circles">
 									</div>
@@ -166,7 +170,7 @@
 							</div>
 							<div class="why__slide swiper-slide swiper-slide--4">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -185,7 +189,7 @@
 											Odoo надає безмежні можливості для налаштування системи під ваші унікальні потреби. Незалежно від того, які зміни вам потрібні, у вас є можливість їх реалізувати.
 										</p>
 									</div>
-									<button type="button" class="why__button button">Спробувати безкоштовно</button>
+									<button data-popup="#popup" type="button" class="why__button button">Спробувати безкоштовно</button>
 									<div class="why__circle">
 										<img src="img/main/why/Slide 4/circle.png" alt="Circles">
 									</div>
@@ -193,7 +197,7 @@
 							</div>
 							<div class="why__slide swiper-slide swiper-slide--5">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -212,7 +216,7 @@
 											Інтерфейс Odoo інтуїтивно зрозумілий і простий у використанні. Нові користувачі можуть швидко освоїти систему без складнощів.
 										</p>
 									</div>
-									<button type="button" class="why__button button">Спробувати безкоштовно</button>
+									<button data-popup="#popup" type="button" class="why__button button">Спробувати безкоштовно</button>
 									<div class="why__circle">
 										<img src="img/main/why/Slide 5/circle.png" alt="Circles">
 									</div>
@@ -220,7 +224,7 @@
 							</div>
 							<div class="why__slide swiper-slide swiper-slide--6">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -238,7 +242,7 @@
 											Odoo надає доступ до відкритого вихідного коду, завдяки цьому ви маєте змогу швидко вносити будь-які необхідні модифікації та розробки.
 										</p>
 									</div>
-									<button type="button" class="why__button button">Спробувати безкоштовно</button>
+									<button data-popup="#popup" type="button" class="why__button button">Спробувати безкоштовно</button>
 									<div class="why__circle">
 										<img src="img/main/why/Slide 6/circle.png" alt="Circles">
 									</div>
@@ -246,7 +250,7 @@
 							</div>
 							<div class="why__slide swiper-slide swiper-slide--7">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -264,7 +268,7 @@
 											Odoo забезпечує зручну інтеграцію із зовнішніми сервісами, більшість з них наразі реалізовано. Це дає змогу поєднувати різні інструменти без проблем.
 										</p>
 									</div>
-									<button type="button" class="why__button button">Спробувати безкоштовно</button>
+									<button data-popup="#popup" type="button" class="why__button button">Спробувати безкоштовно</button>
 									<div class="why__circle">
 										<img src="img/main/why/Slide 7/circle.png" alt="Circles">
 									</div>
@@ -272,7 +276,7 @@
 							</div>
 							<div class="why__slide swiper-slide swiper-slide--8">
 								<div class="why__body">
-									<h2 class="why__title title">
+									<h2 data-watch data-watch-once class="why__title title">
 										ЧОМУ САМЕ ODOO
 									</h2>
 									<div class="why__images">
@@ -290,7 +294,7 @@
 											Обирайте між сучасним хмарним рішенням або традиційним зберіганням даних на сервері, залежно від ваших потреб та уподобань.
 										</p>
 									</div>
-									<button type="button" class="why__button button">Спробувати безкоштовно</button>
+									<button data-popup="#popup" type="button" class="why__button button">Спробувати безкоштовно</button>
 									<div class="why__circle">
 										<img src="img/main/why/Slide 8/circle.png" alt="Circles">
 									</div>
@@ -360,9 +364,9 @@
 								</div>
 							</div>
 						</div>
-						<h2 data-da=".oportunities__container, 1200, 0" class="oportunities__title title">МОЖЛИВОСТІ ТА КОРИСНІ ДОДАТКИ</h2>
+						<h2 data-watch data-watch-once data-da=".oportunities__container, 1200, 0" class="oportunities__title title">МОЖЛИВОСТІ ТА КОРИСНІ ДОДАТКИ</h2>
 					</div>
-					<div class="oportunities__items">
+					<div class="oportunities__items oportunities__items--2">
 						<div data-da=".oportunities__items--1, 1200" class="oportunities__item item-oportunities">
 							<div class="item-oportunities__head">
 								<div class="item-oportunities__icon">
@@ -472,13 +476,13 @@
 			<section class="page__offer offer">
 				<div class="offer__container">
 					<div class="offer__body">
-						<h2 class="offer__title title">
+						<h2 data-watch class="offer__title title">
 							ЩО МИ ПРОПОНУЄМО
 						</h2>
 						<div class="offer__text">
 							<p>Ми пропонуємо вам не просто послуги, а повний комплект інструментів, які забезпечать успіх вашого бізнесу. Наша компанія надає готовий інструментарій для досягнення ваших бізнес цілей. Від аналізу до підтримки, ми покладаємося на наш досвід та інноваційні підходи.</p>
 						</div>
-						<button data-da=".offer__container, 991.98" type="button" class="offer__button button">Замовити консультацію</button>
+						<button data-popup="#popup" data-da=".offer__container, 991.98" type="button" class="offer__button button">Замовити консультацію</button>
 					</div>
 					<div class="offer__items">
 						<div class="offer__column">
@@ -534,7 +538,7 @@
 			</section>
 			<section class="page__cooperation cooperation">
 				<div class="cooperation__container">
-					<h2 class="cooperation__title title">
+					<h2 data-watch class="cooperation__title title">
 						ЯК ПРОХОДИТЬ СПІВПРАЦЯ
 					</h2>
 					<div class="cooperation__items">
@@ -621,7 +625,7 @@
 			</section>
 			<section class="page__choose choose">
 				<div class="choose__container">
-					<div class="choose__title title">
+					<div data-watch data-watch-once class="choose__title title">
 						ОБИРАЙТЕ ODOO
 					</div>
 					<div class="choose__body">
@@ -629,10 +633,10 @@
 							<p>Наші послуги допоможуть вам забезпечити бізнес повністю налаштованими та інноваційними інструментами. Перейдіть на вищий рівень з Odoo, вашим надійним партнером для росту та розвитку.</p>
 						</div>
 						<div class="choose__actions">
-							<button type="button" class="choose__button button button--white">
+							<button data-popup="#popup" type="button" class="choose__button button button--white">
 								Замовити консультацію
 							</button>
-							<button type="button" class="choose__button button button--white-transparent">
+							<button data-popup="#popup" type="button" class="choose__button button button--white-transparent">
 								Спробувати безкоштовно
 							</button>
 						</div>
@@ -682,8 +686,8 @@
 						</a>
 						<div class="contacts-footer__block">
 							<div class="contacts-footer__messengers">
-								<a class="contacts-footer__icon" href="#"><img src="img/icons/telegram.svg" alt="telegram"></a>
-								<a class="contacts-footer__icon" href="#"><img src="img/icons/viber.svg" alt="viber"></a>
+								<a class="contacts-footer__icon" href="#"><img src="img/icons/s-telegram.svg" alt="telegram"></a>
+								<a class="contacts-footer__icon" href="#"><img src="img/icons/s-viber.svg" alt="viber"></a>
 							</div>
 							<a class="contacts-footer__phone" href="tel:+380502198367">+38 050 219 83 67</a>
 						</div>
@@ -704,11 +708,10 @@
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close icon-close">
+				<button data-close type="button" class="popup__close _icon-close">
 				</button>
 				<div class="popup__side">
-					<div class="popup__image-ibg--contain">
-						<picture><source srcset="img/popup/logo.webp" type="image/webp"><img src="img/popup/logo.png" alt="Logo"></picture>
+					<div class="popup__image">
 					</div>
 				</div>
 				<form action="files/sendmail/sendmail.php" method="POST" class="popup__form form-popup">
@@ -732,14 +735,14 @@
 					</div>
 					<div class="form-popup__checkbox checkbox">
 						<input data-required id="policy" data-error="Будь ласка, заповніть дане поле" class="checkbox__input" type="checkbox" value="1" name="policy">
-						<label for="policy" class="checkbox__label icon-checked"><span class="checkbox__text">Я даю згоду на обробку моїх даних і погоджуюсь з <a href="#">Політикою конфіденційності</a></span></label>
+						<label for="policy" class="checkbox__label _icon-checked"><span class="checkbox__text">Я даю згоду на обробку моїх даних і погоджуюсь з <a href="#">Політикою конфіденційності</a></span></label>
 					</div>
 					<button type="submit" class="form-popup__button button button--purple">Підтвердити</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231204084813"></script>
+	<script src="js/app.min.js?_v=20231208123740"></script>
 </body>
 
 </html>

@@ -1378,8 +1378,8 @@ body::after {
 
 .hero__button {
   opacity: 0;
-  -webkit-transition: all 0.5s 0.7s;
-  transition: all 0.5s 0.7s;
+  -webkit-transition: all 0.3s, opacity 0.5s 0.7s;
+  transition: all 0.3s, opacity 0.5s 0.7s;
   -webkit-transform: translate(-3.125rem, 0);
       -ms-transform: translate(-3.125rem, 0);
           transform: translate(-3.125rem, 0);
@@ -2432,10 +2432,6 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;
-}
-
-.hero-posibilities__container {
-  overflow: visible;
 }
 
 .hero-posibilities__title {
@@ -5107,11 +5103,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .marketing__wrapper {
     height: auto;
-  }
-
-  .marketing__slide-ibg {
-    aspect-ratio: 1000/536;
-    width: 100%;
   }
 
   .project__slider {
@@ -8437,7 +8428,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @media (max-width: 61.99875em) and (max-width: 20em) {
   .marketing__wrapper {
-    width: 21.4375rem;
+    width: 18rem;
   }
 }
 
@@ -9331,7 +9322,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .hero {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9408,10 +9399,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     top: 9.4375rem;
   }
 
-  .hero-posibilities::after {
-    content: url("../img/posibilities/hero/bg-mobile.png");
-  }
-
   .project::before {
     top: 31.25rem;
   }
@@ -9428,6 +9415,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .hero-article__head-ibg {
     padding: 0.625rem;
+  }
+
+  .hero-article__title {
+    justify-self: flex-end;
   }
 
   .hero-article__time {
@@ -9487,6 +9478,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 23.49875em) {
+  .hero-posibilities::after {
+    content: url("../img/posibilities/hero/bg-mobile.png");
+  }
+
   .project::before {
     content: url("../img/posibilities/project/bg-mobile.png");
     top: 62.5rem;
@@ -14010,15 +14005,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 61.99875em) and (min-width: 20em) and (max-width: 114.5em) {
-@supports (width: clamp( 21.4375rem , 6.7946428571rem  +  73.2142857143vw , 90.625rem )) {
+@supports (width: clamp( 18rem , 2.6296296296rem  +  76.8518518519vw , 90.625rem )) {
     .marketing__wrapper {
-      width: clamp( 21.4375rem , 6.7946428571rem  +  73.2142857143vw , 90.625rem );
+      width: clamp( 18rem , 2.6296296296rem  +  76.8518518519vw , 90.625rem );
     }
 }
 
-@supports not (width: clamp( 21.4375rem , 6.7946428571rem  +  73.2142857143vw , 90.625rem )) {
+@supports not (width: clamp( 18rem , 2.6296296296rem  +  76.8518518519vw , 90.625rem )) {
     .marketing__wrapper {
-      width: calc(21.4375rem + 69.1875 * (100vw - 20rem) / 94.5);
+      width: calc(18rem + 72.625 * (100vw - 20rem) / 94.5);
     }
 }
 }
